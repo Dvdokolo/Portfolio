@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./output.css">
+  <title>Projects</title>
+</head>
+
+<body class="body bg-gray-900 mx-5 mt-15 md:mt-7 my-10 ">
+  <!-- <nav class="fixed bg-gray-900 top-0 md:w-full z-50"> -->
+  <nav>
+    <div class="container mx-auto flex justify-between items-center">
+
+      <div class="text-white text-[170%] md:text-[280%] hover:text-blue-500 duration-150 cursor-pointer"><a
+          href="Homepage.html">David</a></div>
+
+      <!-- Navbar Links -->
+      <ul class="hidden md:flex space-x-5 ">
+        <li><a href="projects.html"
+            class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out">Projects</a></li>
+        <li><a href="contactpge.html"
+            class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out">Contact</a></li>
+        <li><a href="#" class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out">Freebies</a></li>
+      </ul>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <ul id="mobile-menu"
+        class="md:hidden absolute mt-4 top-14  rounded-xl right-0 bg-gray-800 text-white py-2 px-4 space-y-2">
+        <li><a href="projects.html"
+            class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out">Projects</a></li>
+        <li><a href="contactpge.html"
+            class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out">Contact</a></li>
+        <li><a href="#" class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out">Freebies</a></li>
+      </ul>
+    </div>
+    <br>
+    <hr>
+  </nav>
+  <br>
+  <!-- <h1 class="text-white  text-xl md:text-4xl text-center mt-6 md:mt-auto">
+    Website
+ </h1> -->
+
+  <div class="mt-8 md:mt-auto md:mx-[10rem] md:p-10 ">
+
+    <!-- Slides -->
+    <div class="mySlides fade ">
+      <img src="images/project 1.png" alt="Slide 1" class="h-auto">
+      <div class="text text-white text-xl md:text-3xl text-center mt-5 font-medium">An Online Shoe store</div>
+    </div>
+
+    <div class="mySlides fade transition duration-150">
+      <img src="images/project 2.png" alt="Slide 2" class="h-auto">
+      <div class="text  text-white  text-xl md:text-3xl text-center mt-5 font-medium">A School Website</div>
+    </div>
+
+
+
+    <!-- Next and Previous buttons -->
+    <div class="flex justify-between">
+      <a class="prev border cursor-pointer text-white text-lg md: px-6 py-4 md:px-6 md:py-4 rounded-lg hover:bg-blue-500 duration-150 hover:border-none"
+        onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next border cursor-pointer text-white text-lg md: px-6 py-4 md:px-6 md:py-4 rounded-lg hover:bg-blue-500 duration-150 hover:border-none"
+        onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+  </div>
+
+  <!-- Dots/bullets -->
+  <div class="dot-container text-center mt-2">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+
+  </div>
+  </div>
+  <br>
+  <hr class=" md:mx-[8rem]">
+  <br>
+
+  <h1 class="text-white  text-xl md:text-4xl text-center mt-6 md:mt-auto mx-[2rem] md:mx-a">
+    Contact Me let's build something together
+  </h1>
+  <br>
+  <br>
+  <div class="flex justify-center">
+    <button
+      class="border p-4 rounded-lg text-white text-[100%] md:text-[150%] md:py-4 md:px-7 hover:bg-blue-500 transition ease-in-out hover:border-none">
+      <a href="contactpge.html"> Message Me</a>
+    </button>
+  </div>
+  <script>
+    // navbar
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuToggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      const slides = document.getElementsByClassName("mySlides");
+      const dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // Automatic slideshow
+    setInterval(function () {
+      plusSlides(1);
+    }, 5000); // Change image every 5 seconds
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freebies</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="body bg-gray-900 mx-5 mt-10 md:mt-7 my-10">
+    <!-- <nav class="fixed bg-gray-900 top-0 md:w-full z-50"> -->
+    <nav>
+      <div class="container mx-auto flex justify-between items-center">
+        <div
+          class="text-white text-[170%] md:text-[280%] hover:text-blue-500 duration-150 cursor-pointer"
+        >
+          <a href="Homepage.html">David</a>
+        </div>
+
+        <!-- Navbar Links -->
+        <ul class="hidden md:flex space-x-5">
+          <li>
+            <a
+              href="projects.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactpge.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="freebies.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Freebies</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <ul
+          id="mobile-menu"
+          class="md:hidden absolute mt-4 top-14 rounded-xl right-0 bg-gray-800 text-white py-2 px-4 space-y-2"
+        >
+          <li>
+            <a
+              href="projects.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactpge.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="freebies.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Freebies</a
+            >
+          </li>
+        </ul>
+      </div>
+      <br />
+      <hr />
+    </nav>
+
+    <script>
+      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

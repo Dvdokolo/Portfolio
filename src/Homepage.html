@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../aos.css">
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="body bg-gray-900 mx-5 mt-10 md:mt-7 my-10">
+    <!-- <nav class="fixed bg-gray-900 top-0 md:w-full z-50"> -->
+    <nav>
+      <div class="container mx-auto flex justify-between items-center">
+        <div
+          class="text-white text-[170%] md:text-[280%] hover:text-blue-500 duration-150 cursor-pointer"
+        >
+          <a href="Homepage.html">David</a>
+        </div>
+
+        <!-- Navbar Links -->
+        <ul class="hidden md:flex space-x-5">
+          <li>
+            <a
+              href="projects.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactpge.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="freebies.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Freebies</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <ul 
+         
+          id="mobile-menu"
+          class="md:hidden absolute mt-4 top-14 rounded-xl right-0 bg-gray-800 text-white py-2 px-4 space-y-2"
+        >
+          <li>
+            <a
+              href="projects.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactpge.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="freebies.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Freebies</a
+            >
+          </li>
+        </ul>
+      </div>
+      <br />
+      <hr />
+    </nav>
+
+
+    <!-- Nav bar ends -->
+    
+    <br />
+    <div class="md:flex">
+      <img  data-aos="fade-left"
+        class = "md:h-0 md:w-0 rounded-2xl"
+        src="images/compic.png"
+        alt=""
+      />
+
+      <div data-aos="fade-right" class=" homepageabout text-white mt-[10%] md:mt-[3%] md:ml-8">
+        <span class="text-[150%] md:text-[240%] mb-[20%]"> Hello,i'm </span>
+        <br />
+
+        <span class="text-[190%] md:text-[290%] font-semibold mb-9">
+          David Okolo
+        </span>
+        <br />
+
+        <span class="text-[150%] md:text-[240%]">
+          <span class="text-blue-500">software Developer</span>
+        </span>
+        <br />
+
+        <span class="text-[130%] md:text-2xl">
+          I study at Aptech Computing Education on my way to becoming a
+          fullstack programer and AI profesional for more information about me
+          click the "Read More" option below.
+        </span>
+        <br />
+        <br />
+        <br />
+
+        <button data-aos="fade-right"
+          class="border p-4 rounded-lg text-[100%] md:text-[150%] md:py-4 md:px-7 hover:bg-blue-500 transition ease-in-out"
+        >
+          <a href="About.html"> Read More</a>
+        </button>
+      </div>
+      <img  data-aos="fade-left"
+        class="h-0 w-0 md:h-[70%] md:w-[50%] md:rounded-2xl md:mt-10 md:mr-0"
+        src="images/compic.png"
+        alt=""
+      />
+    </div>
+    <br />
+    <h1 data-aos="fade-down" class="text-white text-center mb-4">
+      <span class="text-3xl md:text-6xl">My Experience</span>
+    </h1>
+
+    <br />
+    <br />
+    <div class="md:flex md:justify-between mx-[3rem] md:mx-[5rem] md:space-x-5">
+      <div  data-aos="fade-down" 
+      class="border py-3 md:py-8 md:px-6 rounded-xl mb-7 w-full">
+        <img src="images/FRONTEND.png" alt="" class="h-[8rem] m-auto" />
+        <br />
+        <p class="text-white text-2xl md:text-3xl text-center">Frontend</p>
+      </div>
+ 
+      <div data-aos="fade-down" data-aos-delay="200" 
+      class="border py-3 md:py-8 md:px-6 rounded-xl mb-7 w-full">
+        <img src="images/BACKEND.png" alt="" class="h-[8rem] m-auto" />
+        <br />
+        <p class="text-white text-2xl md:text-3xl text-center">Backend</p>
+      </div>
+      <div data-aos="fade-down" data-aos-delay="300" 
+      class="border py-3 md:py-8 md:px-6 rounded-xl mb-7 w-full">
+        <img src="images/UIUX.png" alt="" class="h-[8rem] m-auto" />
+        <br />
+        <p class="text-white text-2xl md:text-3xl text-center">UIUX</p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <h1 data-aos="fade-right" class="text-white text-2xl md:text-4xl text-center">
+      Contact Me let's build something together
+    </h1>
+    <br />
+    <br />
+    <div
+    class="flex justify-center">
+      <button  
+        class="border p-4 rounded-lg text-white text-[100%] md:text-[150%] md:py-4 md:px-7 hover:bg-blue-500 transition ease-in-out hover:border-none"
+      >
+        <a href="contactpge.html"> Message Me</a>
+      </button>
+    </div>
+
+    <script src="../aos.js"></script>
+    <script src="../main2.js"></script>
+
+    <script>
+      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

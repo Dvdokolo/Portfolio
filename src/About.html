@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 my-6 mx-7">
+    <nav class="">
+      <div class="container mx-auto flex justify-between items-center">
+        <div
+          class="text-white text-[170%] md:text-[280%] hover:text-blue-500 duration-150 cursor-pointer"
+        >
+          <a href="Homepage.html">David</a>
+        </div>
+
+        
+
+        <!-- Navbar Links -->
+        <ul class="hidden md:flex space-x-5">
+          <li>
+            <a
+              href="projects.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactpge.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="freebies.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Freebies</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <ul
+          id="mobile-menu"
+          class="md:hidden absolute mt-4 top-14 rounded-xl right-0 bg-gray-800 text-white py-2 px-4 space-y-2"
+        >
+          <li>
+            <a
+              href="projects.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="contactpge.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="freebies.html"
+              class="text-white md:text-[120%] hover:text-blue-500 transition ease-in-out"
+              >Freebies</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br />
+    <hr />
+    <br />
+    <br />
+    <h1 class="text-4xl md:text-7xl font-medium text-white text-center">
+      About <span class="text-blue-500">Me</span>
+    </h1>
+
+    <div class="md:flex">
+      <img src="images/image1.png" alt="" class="h-auto md:h-0" />
+      <h2
+        class="text-xl md:text-2xl md:ml-[1rem] md:w-auto md:mx-5 text-white md:mt-[2.5rem]"
+      >
+        <span class="ml-7">Hello</span> im David Okolo a Frontend develover on
+        my way to becoming a fullstack web developer and an AI specialist.
+        Currently i study at Aptech computing Education, i have experience with
+        severial programing languages, query languages and frameworks. For my
+        frontend the programming languages i use are HTML, CSS and JavaScript for my query language i use SQL which
+        is also used for database management and my backend i Use Java or PHP.for Frame
+        works utilize Tailwind CSS and React Native. My mission as a
+        softwaredeveloper and AI specialist is to be able to make applications
+        and AI tools to aid people in their everyday lives and make living
+        easier.
+      </h2>
+      <img src="images/image1.png" alt="" class="h-0 md:h-[22rem]" />
+    </div>
+
+    <div class="flex justify-center">
+      <button
+        class="text-white text-xl md:text-2xl border py-3 px-6 rounded-lg hover:bg-blue-500 duration-150"
+      >
+        <a href="contactpge.html">Contact Me</a>
+      </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuToggle.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
